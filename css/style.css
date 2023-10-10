@@ -2,10 +2,12 @@ body{
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 h1{
     margin: 0;
     font-family: 'Pixelify Sans', sans-serif;
+    color: white;
     font-weight: 100;
     font-size: 70px;
     line-height: 100px;
@@ -13,6 +15,7 @@ h1{
 }
 h4{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
     text-transform: uppercase;
     margin-left: 20px;
     margin-top: 20px;
@@ -22,17 +25,18 @@ h4{
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 0px;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 14px; 
     column-count: 2;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 a:hover{
     color: white;
@@ -42,30 +46,30 @@ a:active{
     text-decoration: none;
 }
 a p{
+    /* styling the paragraph text that is also a link (a) */
     background-color: rgba(100%, 100%, 100%, 0);
     transition: .3s;
     column-count: 1;
 }
 a p:hover{
-    background-color:slategrey;
-}
-a p:active{
-    background-color: black;
+    /* styling the linked paragraph text's hover state */
+    color:blue;
 }
 #container{
     width: 800px;
     height: auto;
-    background-image: url(../images/photo-bkg.jpg);
-    background-color: aliceblue;
+    background-image: url(../images/screen7.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-position: top; */
+    background-position: top;
     position: relative;
+    /* padding at the bottom creates space below the last link */
     padding-bottom: 20px;
 }
 #masthead{
     height: 100px;
-    background-image: url(../images/buddha.jpg);
+    background-image: url(../images/screen7.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -73,9 +77,9 @@ a p:active{
 #links-block{
     width: 50%
 }
-#trans-flower{
+#hourglass{
     position: absolute;
     width: 100px;
     right: 0;
-    bottom: 0;
+    bottom: 15px;
 }
